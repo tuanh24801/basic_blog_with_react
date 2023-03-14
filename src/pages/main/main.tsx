@@ -28,8 +28,8 @@ export const Main = () => {
     }, [])
 
     return (
-        <div>{postList?.map( (post) => (
-            <Post post={post}/>
+        <div>{postList?.map( (post, id) => (
+            <Post post={post} key={id}/>
         ))}</div>
     )
 }
